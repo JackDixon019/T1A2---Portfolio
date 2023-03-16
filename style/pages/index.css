@@ -1,0 +1,68 @@
+header {
+  font-size: 1.2em;
+  padding: 1%;
+  text-align: center;
+  background-color: #2D2B52;
+  color: #CAC1FF;
+  text-decoration: none;
+}
+header a {
+  text-decoration: none;
+  color: #B8E4FD;
+}
+header a:hover {
+  color: #c5f27c;
+}
+header .nav-menu {
+  padding: 1% 1% 0%;
+  margin-left: 50vw;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    background-color: #fff;
+  }
+  header .hamburger {
+    border-radius: 10%;
+    width: 8vw;
+    height: 1vh;
+    background-color: #c5f27c;
+    margin-top: 0.5vh;
+  }
+  header #hamburger {
+    position: fixed;
+    top: 3vh;
+    right: 8vw;
+    z-index: 5;
+  }
+  header .nav-menu {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    opacity: 50%;
+    transition: all ease-in-out 0.4s;
+    transform: scale(0.5);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #c5f27c;
+    color: #2D2B52;
+  }
+  #toggle:checked + .hamburger + .nav-menu {
+    background-color: #fff;
+  }
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #CAC1FF;
+  color: #2D2B52;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */

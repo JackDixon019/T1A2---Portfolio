@@ -1,0 +1,64 @@
+@import "../defaults/colour";
+@import "../defaults/breakpoint";
+
+
+@mixin header-style{
+    font-size: 1.2em;
+    padding: 1%;
+    text-align: center;
+
+    background-color: $element_colour;
+    color: $background_colour;
+    text-decoration: none;
+    a{
+        text-decoration: none;
+        color: $menu_colour;
+    }
+    a:hover{
+        color: $hover_colour;
+    }
+}
+
+header{
+    @include header-style();
+    .nav-menu{
+        padding: 1% 1% 0%;
+        margin-left: 50vw;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+}
+
+@media screen and (max-width: $medium) {
+    header{
+        background-color: #fff;
+        .hamburger{
+            border-radius: 10%;
+            width: 8vw;
+            height: 1vh;
+            background-color: $hover_colour;
+            margin-top: 0.5vh;
+        }
+        #hamburger{
+            position: fixed;
+            top: 3vh; right: 8vw; 
+            z-index: 5;
+        }
+        .nav-menu{
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            opacity: 50%;
+            transition: all ease-in-out 0.4s;
+            transform: scale(0.5);
+            top: 0; right: 0; left: 0; bottom: 0;
+            background-color: $hover_colour;
+            color: $element_colour;
+        }
+    }
+    #toggle:checked + .hamburger + .nav-menu{
+            background-color: #fff;
+    }
+}
