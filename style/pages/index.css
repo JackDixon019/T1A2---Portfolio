@@ -4,16 +4,16 @@ header {
   text-align: center;
   position: fixed;
   width: 100vw;
-  background-color: #2F1D87;
-  color: #B8E4FD;
+  background-color: #102c24;
+  color: #cee59a;
   text-decoration: none;
 }
 header a {
   text-decoration: none;
-  color: #B8E4FD;
+  color: #cee59a;
 }
 header a:hover {
-  color: #EBA1D3;
+  color: #6a9e9f;
 }
 header .nav-menu {
   padding: 1% 1% 0%;
@@ -38,18 +38,18 @@ header .nav-menu {
     text-align: center;
     position: fixed;
     width: 100vw;
-    background-color: #2F1D87;
-    color: #B8E4FD;
+    background-color: #102c24;
+    color: #cee59a;
     text-decoration: none;
-    background-color: #2F1D87;
+    background-color: #102c24;
     height: 8vh;
   }
   header a {
     text-decoration: none;
-    color: #B8E4FD;
+    color: #cee59a;
   }
   header a:hover {
-    color: #EBA1D3;
+    color: #6a9e9f;
   }
   header .nav-menu {
     padding: 1% 1% 0%;
@@ -70,7 +70,7 @@ header .nav-menu {
     width: 8vw;
     height: 1vh;
     margin-top: 0.5vh;
-    background-color: #B8E4FD;
+    background-color: #cee59a;
     transition: all 0.2s ease-in-out;
   }
   header .nav-menu {
@@ -78,7 +78,7 @@ header .nav-menu {
     border-radius: 20%;
     width: 100%;
     height: 125%;
-    background-color: #2F1D87;
+    background-color: #102c24;
     top: -100%;
     right: -50%;
     transition: all 0.4s ease-in-out;
@@ -124,25 +124,41 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #E1CAF3;
-  color: #2F1D87;
+  background-color: #131d25;
+  color: #FFFFFF;
   text-align: center;
+  background-image: url(../../images/bg_image.jpg);
+  background-size: cover;
+  background-color: #131d25;
 }
 
 main {
   margin: 10vh 0vw 10vh 0vw;
-  background-image: url(../../images/steamed-hams.gif);
-  background-color: #E1CAF3;
+  text-shadow: 1px 1px 2px #131d25;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid red 1px;
 }
-
-article {
-  margin-top: 10vh;
-  margin-left: 10vw;
+main .title {
+  font-size: 8vh;
+  margin-bottom: 5vh;
+}
+main article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main article section {
   width: 80vw;
-  border-radius: 6%;
-  background-color: #fff;
+  border-radius: 16px/16px;
+  border: solid white 3px;
+  padding: 1.5%;
 }
-
-section {
+main article aside {
   overflow: hidden;
+}
+main article aside img {
+  height: 25vh;
+  border-radius: 50%;
 }/*# sourceMappingURL=index.css.map */

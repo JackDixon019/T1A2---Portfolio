@@ -12,25 +12,44 @@ body{
     flex-direction: column;
     justify-content: space-between;
     background-color: $background_colour;
-    color: $element_colour;
+    color: $neutral_colour;
     text-align: center;
+    background-image: url(../../images/bg_image.jpg);
+    background-size: cover;
+    background-color: $background_colour;
 }
 
 main{
     margin: 10vh 0vw 10vh 0vw;
-    background-image: url(../../images/steamed-hams.gif);
-    background-color: $background_colour;
-}
+    text-shadow: 1px 1px 2px $background_colour;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid red 1px;
 
-article{
-    margin-top: 10vh;
-    margin-left: 10vw;
-    width: 80vw;
-    border-radius: 6%;
-    background-color: #fff;
-}
-section{
-    overflow: hidden;
+    .title {
+        font-size: 8vh;
+        margin-bottom: 5vh;
+    }
+    article{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
 
+        section{
+            // margin-left: 10vw;
+            width: 80vw;
+            border-radius: 16px/16px;
+            border: solid white 3px;
+            padding: 1.5%;
+        }
+        
+        aside{
+            overflow: hidden;
+            img{
+                height: 25vh;
+                border-radius: 50%;
+            }        
+        }   
+    }
 }
-
