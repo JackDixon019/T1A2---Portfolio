@@ -2,8 +2,10 @@ header {
   font-size: 1.2em;
   padding: 1%;
   text-align: center;
-  background-color: #2D2B52;
-  color: #CAC1FF;
+  position: fixed;
+  width: 100vw;
+  background-color: #2F1D87;
+  color: #B8E4FD;
   text-decoration: none;
 }
 header a {
@@ -11,7 +13,7 @@ header a {
   color: #B8E4FD;
 }
 header a:hover {
-  color: #c5f27c;
+  color: #EBA1D3;
 }
 header .nav-menu {
   padding: 1% 1% 0%;
@@ -34,10 +36,12 @@ header .nav-menu {
     font-size: 1.2em;
     padding: 1%;
     text-align: center;
-    background-color: #2D2B52;
-    color: #CAC1FF;
+    position: fixed;
+    width: 100vw;
+    background-color: #2F1D87;
+    color: #B8E4FD;
     text-decoration: none;
-    background-color: #2D2B52;
+    background-color: #2F1D87;
     height: 8vh;
   }
   header a {
@@ -45,7 +49,7 @@ header .nav-menu {
     color: #B8E4FD;
   }
   header a:hover {
-    color: #c5f27c;
+    color: #EBA1D3;
   }
   header .nav-menu {
     padding: 1% 1% 0%;
@@ -56,7 +60,7 @@ header .nav-menu {
   }
   header .hamburger {
     border-radius: 10%;
-    position: absolute;
+    position: fixed;
     top: 3vh;
     right: 8vw;
     z-index: 5;
@@ -66,39 +70,32 @@ header .nav-menu {
     width: 8vw;
     height: 1vh;
     margin-top: 0.5vh;
-    background-color: #c5f27c;
+    background-color: #B8E4FD;
     transition: all 0.2s ease-in-out;
   }
   header .nav-menu {
-    text-align: center;
     position: fixed;
-    border-radius: 25%;
+    border-radius: 20%;
     width: 100%;
     height: 125%;
-    background-color: #2D2B52;
+    background-color: #2F1D87;
     top: -100%;
     right: -50%;
-    overflow: hidden;
     transition: all 0.4s ease-in-out;
     transform: scale(0);
     text-align: left;
-    margin-left: -25%;
   }
-  header .nav-menu .nav-wrapper {
-    position: relative;
-    margin-top: 25%;
+  header .nav-menu nav {
+    margin-top: 30%;
     width: 50%;
     height: 50%;
-  }
-  header .nav-menu .nav-wrapper nav {
     margin-left: -20%;
     display: flex;
     flex-direction: column;
   }
-  header .nav-menu .nav-wrapper nav a {
+  header .nav-menu nav a {
     margin-top: 4vh;
     font-size: 8vh;
-    color: #c5f27c;
   }
   #toggle:checked + .hamburger + .nav-menu {
     top: -15%;
@@ -127,7 +124,25 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #CAC1FF;
-  color: #2D2B52;
+  background-color: #E1CAF3;
+  color: #2F1D87;
   text-align: center;
+}
+
+main {
+  margin: 10vh 0vw 10vh 0vw;
+  background-image: url(../../images/steamed-hams.gif);
+  background-color: #E1CAF3;
+}
+
+article {
+  margin-top: 10vh;
+  margin-left: 10vw;
+  width: 80vw;
+  border-radius: 6%;
+  background-color: #fff;
+}
+
+section {
+  overflow: hidden;
 }/*# sourceMappingURL=index.css.map */

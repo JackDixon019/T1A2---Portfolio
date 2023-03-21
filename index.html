@@ -8,34 +8,38 @@
     <link rel="stylesheet" href="./style/pages/index.css">
     <title>Document</title>
 </head>
+<!-- Header -->
     <header>
         This is the header
-        <input id="toggle" type="checkbox"></input>
+        <!-- This toggle is hidden. Controls the hamburger menu pop-in -->
+        <input id="toggle" type="checkbox" name="hamburger-menu-toggle">
         
-        <label for="toggle" class="hamburger" name="navigation menu button">
+        <!-- Creates a clickable hamburger button -->
+        <label for="toggle" class="hamburger">
             <div class="top-bun"></div>
             <div class="patty"></div>
             <div class="bottom-bun"></div>
         </label>
 
+        <!-- In desktop mode, these are header links. In phone mode, this is a hamburger menu pop-in -->
         <div class="nav-menu">
-            <div class="nav-wrapper">
-                <nav>
-                    <a href="about">About</a>
-                    <a href="blog">Blog</a>
-                    <a href="contact">Contact</a>
-                </nav>
-            </div>
+            <nav>
+                <a href="about">About</a>
+                <a href="blog">Blog</a>
+                <a href="contact">Contact</a>
+            </nav>
         </div>
     </header>
 
+    <main>
 
-    <article>
-        <section>
-            <img src="./images/b2b (1).png" alt="Picture of myself">
-        </section>
-        Welcome to my portfolio website. 
-        Placeholder text.
-    </article>
+        <article>
+            <section>
+                <img src="./images/b2b (1).png" alt="Picture of myself">
+            </section>
+            Welcome to my portfolio website. 
+            Placeholder text.
+        </article>
+    </main>
 </body>
 </html>

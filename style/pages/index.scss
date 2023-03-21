@@ -16,3 +16,21 @@ body{
     text-align: center;
 }
 
+main{
+    margin: 10vh 0vw 10vh 0vw;
+    background-image: url(../../images/steamed-hams.gif);
+    background-color: $background_colour;
+}
+
+article{
+    margin-top: 10vh;
+    margin-left: 10vw;
+    width: 80vw;
+    border-radius: 6%;
+    background-color: #fff;
+}
+section{
+    overflow: hidden;
+
+}
+
