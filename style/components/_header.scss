@@ -1,31 +1,61 @@
 @import "../defaults/colour";
 @import "../defaults/breakpoint";
+@import "../defaults/fonts";
 
 
 @mixin header-footer-style{
-    font-size: 1.2em;
+    font-size: 1.6em;
     padding: 1%;
-    text-align: center;
+    text-align: left;
     position: fixed;
     width: 100vw;
     background-color: $element_colour;
     color: $menu_colour;
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    min-height: 40px;
+
+    #logo{
+        min-height: 30px;
+        min-width: 30px;
+        height: 7vh;
+        width: 7vh;
+        margin-left: 3vw;
+        margin-top: 0.6vh;
+
+        img{
+            height: 100%;
+        }
+    }
 
     a{
         text-decoration: none;
         color: $menu_colour;
+
+        &:hover{
+            color: $hover_colour;
+            transform: scale(1.1);
+        }
     }
-    a:hover{
-        color: $hover_colour;
-    }
+
 
     .nav-menu{
         padding: 1% 1% 0%;
-        margin-left: 50vw;
         width: 50%;
         display: flex;
         justify-content: space-around;
+        font-family: $menu-font;
+    }
+
+    svg{
+        height: inherit;
+        width: auto;
+        fill: $menu_colour;
+
+        &:hover{
+            fill: $hover_colour;
+        }
     }
 }
 
@@ -54,14 +84,21 @@ header{
         .hamburger{
             border-radius: 10%;
             position: fixed;
-            top: 3vh; right: 8vw; 
+            top: 2vh; right: 8vw; 
             z-index: 5;
+
+            &:hover{
+                div{
+                    background-color: $hover_colour;
+                }
+            }
 
             div{
                 border-radius: 0.5vh;
-                width: 8vw;
+                width: 10vw;
                 height: 1vh;
-                margin-top: 0.5vh;
+                min-height: 8px;
+                margin-top: 8%;
                 background-color: $menu_colour;
                 transition: all 0.2s ease-in-out;
             }
@@ -82,17 +119,18 @@ header{
 
             // This section is for the expanded hamburger-menu.
                 nav{
-                    margin-top: 30%;
+                    margin-top: 20vh;
                     width: 50%;
                     height: 50%;
 
                     margin-left: -20%;
                     display: flex;
                     flex-direction: column;
+                    font-size: 28vh;
 
                     a{
-                        margin-top: 4vh;
-                        font-size: 8vh;
+                        margin-top: 6vh;
+                        font-size: 5vh;
                     }
                 }
           }
@@ -106,14 +144,14 @@ header{
     // This section changes the hamburger button into an X shape
     #toggle:checked + .hamburger .top-bun{
         transform: rotate(45deg);
-        translate: 0 1.5vh;
+        translate: 0 120%;
     }
     #toggle:checked + .hamburger .patty{
         transform: rotate(45deg);
     }
     #toggle:checked + .hamburger .bottom-bun{
         transform: rotate(-45deg);
-        translate: 0 -1.5vh;
+        translate: 0 -150%;
     }
 
 }

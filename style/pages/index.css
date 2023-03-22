@@ -1,26 +1,49 @@
 header {
-  font-size: 1.2em;
+  font-size: 1.6em;
   padding: 1%;
-  text-align: center;
+  text-align: left;
   position: fixed;
   width: 100vw;
   background-color: #102c24;
   color: #cee59a;
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  min-height: 40px;
+}
+header #logo {
+  min-height: 30px;
+  min-width: 30px;
+  height: 7vh;
+  width: 7vh;
+  margin-left: 3vw;
+  margin-top: 0.6vh;
+}
+header #logo img {
+  height: 100%;
 }
 header a {
   text-decoration: none;
   color: #cee59a;
 }
 header a:hover {
-  color: #6a9e9f;
+  color: #e2c7f7;
+  transform: scale(1.1);
 }
 header .nav-menu {
   padding: 1% 1% 0%;
-  margin-left: 50vw;
   width: 50%;
   display: flex;
   justify-content: space-around;
+  font-family: "Francois One", sans-serif;
+}
+header svg {
+  height: inherit;
+  width: auto;
+  fill: #cee59a;
+}
+header svg:hover {
+  fill: #e2c7f7;
 }
 
 @media screen and (min-width: 601px) {
@@ -33,43 +56,70 @@ header .nav-menu {
 }
 @media screen and (max-width: 600px) {
   header {
-    font-size: 1.2em;
+    font-size: 1.6em;
     padding: 1%;
-    text-align: center;
+    text-align: left;
     position: fixed;
     width: 100vw;
     background-color: #102c24;
     color: #cee59a;
     text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    min-height: 40px;
     background-color: #102c24;
     height: 8vh;
+  }
+  header #logo {
+    min-height: 30px;
+    min-width: 30px;
+    height: 7vh;
+    width: 7vh;
+    margin-left: 3vw;
+    margin-top: 0.6vh;
+  }
+  header #logo img {
+    height: 100%;
   }
   header a {
     text-decoration: none;
     color: #cee59a;
   }
   header a:hover {
-    color: #6a9e9f;
+    color: #e2c7f7;
+    transform: scale(1.1);
   }
   header .nav-menu {
     padding: 1% 1% 0%;
-    margin-left: 50vw;
     width: 50%;
     display: flex;
     justify-content: space-around;
+    font-family: "Francois One", sans-serif;
+  }
+  header svg {
+    height: inherit;
+    width: auto;
+    fill: #cee59a;
+  }
+  header svg:hover {
+    fill: #e2c7f7;
   }
   header .hamburger {
     border-radius: 10%;
     position: fixed;
-    top: 3vh;
+    top: 2vh;
     right: 8vw;
     z-index: 5;
   }
+  header .hamburger:hover div {
+    background-color: #e2c7f7;
+  }
   header .hamburger div {
     border-radius: 0.5vh;
-    width: 8vw;
+    width: 10vw;
     height: 1vh;
-    margin-top: 0.5vh;
+    min-height: 8px;
+    margin-top: 8%;
     background-color: #cee59a;
     transition: all 0.2s ease-in-out;
   }
@@ -86,16 +136,17 @@ header .nav-menu {
     text-align: left;
   }
   header .nav-menu nav {
-    margin-top: 30%;
+    margin-top: 20vh;
     width: 50%;
     height: 50%;
     margin-left: -20%;
     display: flex;
     flex-direction: column;
+    font-size: 28vh;
   }
   header .nav-menu nav a {
-    margin-top: 4vh;
-    font-size: 8vh;
+    margin-top: 6vh;
+    font-size: 5vh;
   }
   #toggle:checked + .hamburger + .nav-menu {
     top: -15%;
@@ -104,14 +155,14 @@ header .nav-menu {
   }
   #toggle:checked + .hamburger .top-bun {
     transform: rotate(45deg);
-    translate: 0 1.5vh;
+    translate: 0 120%;
   }
   #toggle:checked + .hamburger .patty {
     transform: rotate(45deg);
   }
   #toggle:checked + .hamburger .bottom-bun {
     transform: rotate(-45deg);
-    translate: 0 -1.5vh;
+    translate: 0 -150%;
   }
 }
 #toggle {
@@ -138,27 +189,27 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid red 1px;
 }
 main .title {
   font-size: 8vh;
   margin-bottom: 5vh;
 }
 main article {
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 main article section {
-  width: 80vw;
+  width: 60vw;
+  font-size: 3vh;
   border-radius: 16px/16px;
-  border: solid white 3px;
   padding: 1.5%;
 }
 main article aside {
   overflow: hidden;
 }
 main article aside img {
-  height: 25vh;
+  max-height: 35vh;
   border-radius: 50%;
 }/*# sourceMappingURL=index.css.map */
