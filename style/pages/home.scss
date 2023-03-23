@@ -1,1 +1,19 @@
-@import "../index"
+@import "../index";
+@import "../defaults/breakpoint";
+
+@media screen and (max-width: $medium) {
+    main{
+        article{
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        
+        .picture{
+            margin-bottom: 5vh;
+        }
+        section{
+            width: 80vw;
+        }
+        }
+    }
+}
