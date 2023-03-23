@@ -15,31 +15,44 @@
     display: flex;
     justify-content: space-between;
     min-height: 40px;
-
+    
     #logo{
         min-height: 30px;
         min-width: 30px;
         height: 7vh;
         width: 7vh;
         margin-left: 3vw;
-        margin-top: 0.6vh;
-
-        img{
-            height: 100%;
+        margin-top: 0.2%;
+        
+        svg{
+            height: inherit;
+            min-height: 40px;
+            width: auto;
+            fill: $menu_colour;
+            
+            &:hover{
+                fill: $hover_colour;
+            }
         }
     }
-
+    
+    nav{
+        width: 50vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
     a{
         text-decoration: none;
         color: $menu_colour;
-
+        
         &:hover{
             color: $hover_colour;
             transform: scale(1.1);
         }
     }
-
-
+    
     .nav-menu{
         padding: 1% 1% 0%;
         width: 50%;
@@ -47,30 +60,12 @@
         justify-content: space-around;
         font-family: $menu-font;
     }
-
-    svg{
-        height: inherit;
-        width: auto;
-        fill: $menu_colour;
-
-        &:hover{
-            fill: $hover_colour;
-        }
-    }
+    
 }
 
 header{
     @include header-footer-style();
     
-}
-
-@media screen and (min-width: 601px) {
-    nav{
-        width: 50vw;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
 }
 
 // This changes the header to become a hamburger-menu on mobile devices
@@ -95,7 +90,7 @@ header{
 
             div{
                 border-radius: 0.5vh;
-                width: 10vw;
+                width: min(12vh, max(10vw, 50px));
                 height: 1vh;
                 min-height: 8px;
                 margin-top: 8%;
@@ -130,7 +125,7 @@ header{
 
                     a{
                         margin-top: 6vh;
-                        font-size: 5vh;
+                        font-size: max(5vh, 2rem);
                     }
                 }
           }
@@ -143,15 +138,16 @@ header{
         }
     // This section changes the hamburger button into an X shape
     #toggle:checked + .hamburger .top-bun{
-        transform: rotate(45deg);
-        translate: 0 120%;
+        opacity: 0;
     }
-    #toggle:checked + .hamburger .patty{
+    #toggle:checked + .hamburger .patty1{
         transform: rotate(45deg);
+    }
+    #toggle:checked + .hamburger .patty2{
+        transform: rotate(-90deg);
     }
     #toggle:checked + .hamburger .bottom-bun{
-        transform: rotate(-45deg);
-        translate: 0 -150%;
+        opacity: 0;
     }
 
 }
