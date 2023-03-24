@@ -5,6 +5,9 @@
     visibility: hidden;
 }
 
+// Body css allocates the backgroubnd image, a background colour in case the image can't be loaded, 
+// assigns text colour, and orders the elements in the page in columns.
+
 body{
     margin: 0;
     min-height: 100vh;
@@ -16,18 +19,19 @@ body{
     text-align: center;
     background-image: url(../../images/bg_image.jpg);
     background-size: cover;
-    background-color: $background_colour;
 }
 
+// Main css assigns the margins to give space for header/footer, organises content in columns, 
+// and gives text a shadow to make it clearer against background
 main{
-    margin: 10vh 0vw 10vh 0vw;
+    margin: max(10vh, 40px) 0vw max(10vh, 40px) 0vw;
     text-shadow: 0.5px 0.7px 1px #000000;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .title {
-        font-size: 8vh;
+        font-size: max(2rem, 8vh);
         margin-bottom: 5vh;
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -37,15 +41,16 @@ main{
         flex-direction: row;
         justify-content: space-around;
 
-        section{
+        .text{
             width: 60vw;
             font-size: max(1em, 3vh);
             border-radius: 16px/16px;
             border: solid white 3px;
             padding: 1.5%;
+            background-color: #102c2485;
         }
         
-        aside{
+        .picture{
             overflow: hidden;
             img{
                 max-height: 35vh;

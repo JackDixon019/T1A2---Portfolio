@@ -215,18 +215,4 @@ main article .picture {
 main article .picture img {
   max-height: 35vh;
   border-radius: 50%;
-}
-
-@media screen and (max-width: 900px) {
-  main article {
-    flex-direction: column;
-    align-items: center;
-    width: 90vw;
-  }
-  main article .picture {
-    margin-bottom: 5vh;
-  }
-  main article section {
-    width: 80vw;
-  }
-}/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=contact.css.map */

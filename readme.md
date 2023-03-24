@@ -19,4 +19,9 @@ The components currently consist of:
 The defaults currently consist of:
 - Colour
 - Breakpoint
+- Fonts
+
+There is one stylesheet for each page, as above.
+
+
 
