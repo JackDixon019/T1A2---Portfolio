@@ -1,2 +1,43 @@
 @import "../index";
 
+main{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    margin-top: max(15vh, 60px);
+    a{
+        text-decoration: none;
+        color: $neutral_colour;
+    }
+}
+
+article{
+    width: 30vw;
+    height: 25vh;
+    font-size: max(1em, 3vh);
+    border-radius: 16px/16px;
+    border: solid white 3px;
+    padding: 1.5%;
+    background-color: $textbox_colour;
+    margin: 0 5vw 5vh 0;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    scroll-margin: 15vh;
+
+    .title{
+        margin: 0;
+    }
+
+    img{
+        max-width: min(100%, 400px);
+    }
+    
+
+    &:focus{
+        width:80vw;
+        height: 80vh;
+        overflow-y: scroll;
+    }
+}

@@ -1,12 +1,39 @@
 @import "../index";
 @import "../defaults/breakpoint";
 
+// Assigns size of the contents of the page, as well as organising content in rows
+article{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    // Assigns text box size. adds solid colour to box to improve readability. 
+    .text{
+        width: 60vw;
+        font-size: max(1em, 3vh);
+        border-radius: 16px/16px;
+        border: solid white 3px;
+        padding: 1.5%;
+        background-color: $textbox_colour;
+    }
+    
+    // Gives the picture a rounded edge, max height.
+    .picture{
+        overflow: hidden;
+        img{
+            max-height: max(35vh, 100px);
+            border-radius: 50%;
+        }        
+    }   
+}
+
 @media screen and (max-width: $medium) {
     main{
         article{
         flex-direction: column;
         align-items: center;
-        width: 90vw;
+        width: 100vw;
         
         .picture{
             margin-bottom: 5vh;

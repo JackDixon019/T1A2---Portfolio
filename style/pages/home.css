@@ -1,6 +1,7 @@
 header {
   font-size: 1.6em;
   padding: 1%;
+  top: 0;
   text-align: left;
   position: fixed;
   width: 100vw;
@@ -54,6 +55,7 @@ header .nav-menu {
   header {
     font-size: 1.6em;
     padding: 1%;
+    top: 0;
     text-align: left;
     position: fixed;
     width: 100vw;
@@ -170,38 +172,43 @@ header .nav-menu {
   visibility: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: #131d25;
   color: #FFFFFF;
   text-align: center;
   background-image: url(../../images/bg_image.jpg);
   background-size: cover;
+  background-attachment: fixed;
+  scrollbar-color: #FFFFFF rgba(16, 44, 36, 0.5215686275);
 }
 
 main {
-  margin: max(10vh, 40px) 0vw max(10vh, 40px) 0vw;
+  margin: max(12vh, 44px) 0vw max(10vh, 40px) 0vw;
   text-shadow: 0.5px 0.7px 1px #000000;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .title {
+
+.title {
   font-size: max(2rem, 8vh);
   margin-bottom: 5vh;
   font-family: Arial, Helvetica, sans-serif;
 }
-main article {
+
+article {
   width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-main article .text {
+article .text {
   width: 60vw;
   font-size: max(1em, 3vh);
   border-radius: 16px/16px;
@@ -209,11 +216,11 @@ main article .text {
   padding: 1.5%;
   background-color: rgba(16, 44, 36, 0.5215686275);
 }
-main article .picture {
+article .picture {
   overflow: hidden;
 }
-main article .picture img {
-  max-height: 35vh;
+article .picture img {
+  max-height: max(35vh, 100px);
   border-radius: 50%;
 }
 
@@ -221,7 +228,7 @@ main article .picture img {
   main article {
     flex-direction: column;
     align-items: center;
-    width: 90vw;
+    width: 100vw;
   }
   main article .picture {
     margin-bottom: 5vh;
