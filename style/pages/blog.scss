@@ -12,32 +12,73 @@ main{
     }
 }
 
+// produces X button for focused article. 
+// Not displayed to begin with
+.exit{
+    color: $neutral_colour;
+    height: 10%;
+    width: 100%;
+    text-align: end;
+    text-shadow: 2px 2px 2px $textbox_colour;
+    font-size: 2rem;
+    position:sticky;
+    top: -5%;
+    margin-top: -5%;
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+// Defines blog post article styling.
 article{
-    width: 30vw;
+    width: max(20vw,100px);
     height: 25vh;
     font-size: max(1em, 3vh);
     border-radius: 16px/16px;
-    border: solid white 3px;
+    border: solid $neutral_colour 3px;
     padding: 1.5%;
     background-color: $textbox_colour;
-    margin: 0 5vw 5vh 0;
-    transition: all 0.5s ease-in-out;
+    margin: 0 2vw 5vh 2vw;
     overflow: hidden;
     text-overflow: ellipsis;
-    scroll-margin: 15vh;
+    text-align: center;
 
     .title{
         margin: 0;
     }
 
     img{
-        max-width: min(100%, 400px);
+        max-width: min(100%, 200px);
     }
     
-
     &:focus{
-        width:80vw;
-        height: 80vh;
+        order: -1;
+        width: 80vw;
+        height: 70vh;
         overflow-y: scroll;
+
+        img{
+            max-width: 60%;
+            max-height: 60%;
+            margin: 1%;
+        }
+
+        .exit{
+            display: inherit;
+        }
+    }
+}
+
+@media screen and (max-width: $small){
+    main{
+        flex-direction: column;
+        align-content: center;
+        border: soldi red 100px;
+    }
+
+    article{
+        width: 70vw;
     }
 }
