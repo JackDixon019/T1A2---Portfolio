@@ -17,11 +17,11 @@ main{
     }
 }
 
-// produces X button for focused article. 
+// produces "-" button for focused article. 
 // Not displayed to begin with
 .exit{
     color: $neutral_colour;
-    height: 10%;
+    height: 2%;
     width: 100%;
     text-align: end;
     font-weight: 700;
@@ -31,7 +31,8 @@ main{
                  1px 1px   0px $background_colour;
     font-size: 2rem;
     position:sticky;
-    top: -5%;
+    top: -4%;
+    right: 2%;
     margin-top: -5%;
     display: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -47,7 +48,7 @@ article{
     font-size: max(1em, 3vh);
     border-radius: 16px/16px;
     border: solid $neutral_colour 3px;
-    padding: 1.5%;
+    padding: 2%;
     background-color: $textbox_colour;
     margin: 0 2vw 5vh 2vw;
     overflow: hidden;
@@ -58,6 +59,7 @@ article{
         font-size: 1.5em;
         width:100%;
         margin: 0;
+        margin-top: 3%;
     }
 
     .date{
@@ -77,6 +79,7 @@ article{
         margin-top: 3%;
     }
     
+    // This section changes the size and styling of the blog post when focused.
     &:focus{
         width: 80vw;
         height: 70vh;
@@ -89,7 +92,6 @@ article{
         img{
             max-width: 60%;
             max-height: 60%;
-            // margin: 0.5%;
         }
         
         .portrait{
@@ -103,18 +105,25 @@ article{
     }
 }
 
+
+
+// When not viewed on mobile, this reorganises the page so that the focused post is at the top.
 @media screen and (min-width: $small) {
     .post:focus{
         order: -1;
     }
 }
 
+
+// When viewing on tablets, this restricts the posts per row to 2
 @media screen and (max-width: $medium) {
     article{
         width: 40vw;
     }
 }
 
+
+// When viewing on mobile, organises posts in columns instead of rows.
 @media screen and (max-width: $small){
     main{
         flex-direction: column;
@@ -122,6 +131,7 @@ article{
     }
 
     article{
+        transition: all 0.4s ease-in-out;
         width: 70vw;
     }
 }

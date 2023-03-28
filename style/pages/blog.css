@@ -226,14 +226,15 @@ main a {
 
 .exit {
   color: #FFFFFF;
-  height: 10%;
+  height: 2%;
   width: 100%;
   text-align: end;
   font-weight: 700;
   text-shadow: -1px -1px 0px #131d25, -1px 1px 0px #131d25, 1px -1px 0px #131d25, 1px 1px 0px #131d25;
   font-size: 2rem;
   position: sticky;
-  top: -5%;
+  top: -4%;
+  right: 2%;
   margin-top: -5%;
   display: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -248,7 +249,7 @@ article {
   font-size: max(1em, 3vh);
   border-radius: 16px/16px;
   border: solid #FFFFFF 3px;
-  padding: 1.5%;
+  padding: 2%;
   background-color: rgba(16, 44, 36, 0.5215686275);
   margin: 0 2vw 5vh 2vw;
   overflow: hidden;
@@ -259,6 +260,7 @@ article .post-title {
   font-size: 1.5em;
   width: 100%;
   margin: 0;
+  margin-top: 3%;
 }
 article .date {
   font-size: 0.6em;
@@ -309,6 +311,7 @@ article:focus .exit {
     align-content: center;
   }
   article {
+    transition: all 0.4s ease-in-out;
     width: 70vw;
   }
 }/*# sourceMappingURL=blog.css.map */
