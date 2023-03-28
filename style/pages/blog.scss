@@ -1,11 +1,16 @@
 @import "../index";
 
+.title{
+    margin-top: max(13vh,85px);
+    margin-bottom: 0;
+}
+
 main{
+    margin-top: 1vh;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     transition: all 0.5s ease-in-out;
-    margin-top: max(15vh, 60px);
     a{
         text-decoration: none;
         color: $neutral_colour;
@@ -19,7 +24,11 @@ main{
     height: 10%;
     width: 100%;
     text-align: end;
-    text-shadow: 2px 2px 2px $textbox_colour;
+    font-weight: 700;
+    text-shadow: -1px -1px 0px $background_colour,
+                 -1px 1px  0px $background_colour,
+                 1px -1px  0px $background_colour,
+                 1px 1px   0px $background_colour;
     font-size: 2rem;
     position:sticky;
     top: -5%;
@@ -45,24 +54,47 @@ article{
     text-overflow: ellipsis;
     text-align: center;
 
-    .title{
+    .post-title{
+        font-size: 1.5em;
+        width:100%;
         margin: 0;
+    }
+
+    .date{
+        font-size: 0.6em;
+        margin: 0;
+        margin-bottom: 2%;
+        text-decoration: underline;
+        font-weight: 100;
     }
 
     img{
         max-width: min(100%, 200px);
     }
     
+    
+    p{
+        margin-top: 3%;
+    }
+    
     &:focus{
-        order: -1;
         width: 80vw;
         height: 70vh;
         overflow-y: scroll;
-
+        
+        .post-title{
+            font-size: 3rem;
+        }
+        
         img{
             max-width: 60%;
             max-height: 60%;
-            margin: 1%;
+            // margin: 0.5%;
+        }
+        
+        .portrait{
+            float: left;
+            padding-right: 1%;
         }
 
         .exit{
@@ -71,11 +103,22 @@ article{
     }
 }
 
+@media screen and (min-width: $small) {
+    .post:focus{
+        order: -1;
+    }
+}
+
+@media screen and (max-width: $medium) {
+    article{
+        width: 40vw;
+    }
+}
+
 @media screen and (max-width: $small){
     main{
         flex-direction: column;
         align-content: center;
-        border: soldi red 100px;
     }
 
     article{
