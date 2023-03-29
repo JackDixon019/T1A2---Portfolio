@@ -119,6 +119,10 @@ article{
 @media screen and (max-width: $medium) {
     article{
         width: 40vw;
+
+        .exit{
+            top: 0%;
+        }
     }
 }
 

@@ -304,6 +304,9 @@ article:focus .exit {
   article {
     width: 40vw;
   }
+  article .exit {
+    top: 0%;
+  }
 }
 @media screen and (max-width: 600px) {
   main {
