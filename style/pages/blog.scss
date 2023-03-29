@@ -2,7 +2,7 @@
 
 .title{
     margin-top: max(13vh,85px);
-    margin-bottom: 0;
+    margin-bottom: 1vh;
 }
 
 main{
@@ -11,6 +11,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     transition: all 0.5s ease-in-out;
+    margin-bottom: 0;
     a{
         text-decoration: none;
         color: $neutral_colour;
@@ -82,7 +83,7 @@ article{
     // This section changes the size and styling of the blog post when focused.
     &:focus{
         width: 80vw;
-        height: 70vh;
+        height: 65vh;
         overflow-y: scroll;
         
         .post-title{

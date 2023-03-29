@@ -1,7 +1,7 @@
 # T1A2 - Portfolio
 
 ## Pages
-This section will contain the pages of hte website. 
+This section will contain the pages of the website. 
 As per the assignment, the pages included will be:
 - Home
 - About
@@ -23,5 +23,9 @@ The defaults currently consist of:
 
 There is one stylesheet for each page, as above.
 
+## Files
+This contains a pdf file of my mock resume. It is linked to in the "About" page.
 
+## Images
+This folder contains images used in the blog posts and about page.
 
