@@ -252,7 +252,7 @@ article {
   border: solid #FFFFFF 3px;
   padding: 2%;
   background-color: rgba(16, 44, 36, 0.5215686275);
-  margin: 0 2vw 5vh 2vw;
+  margin: 0 2vw 4vh 2vw;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
@@ -308,6 +308,7 @@ article:focus .exit {
 @media screen and (max-width: 900px) {
   article {
     width: 40vw;
+    height: 20vh;
   }
   article .exit {
     top: 0%;

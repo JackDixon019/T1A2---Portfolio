@@ -51,7 +51,7 @@ article{
     border: solid $neutral_colour 3px;
     padding: 2%;
     background-color: $textbox_colour;
-    margin: 0 2vw 5vh 2vw;
+    margin: 0 2vw 4vh 2vw;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
@@ -73,6 +73,7 @@ article{
 
     img{
         max-width: min(100%, 200px);
+
     }
     
     
@@ -125,6 +126,7 @@ article{
 @media screen and (max-width: $medium) {
     article{
         width: 40vw;
+        height: 20vh;
 
         .exit{
             top: 0%;

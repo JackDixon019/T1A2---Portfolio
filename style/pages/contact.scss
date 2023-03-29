@@ -1,1 +1,39 @@
 @import "../index";
+@import "../defaults/colour";
+
+article{
+    width: 60vw;
+    font-size: max(1em, 3vh);
+    border-radius: 16px/16px;
+    border: solid $neutral_colour 3px;
+    padding: 1.5%;
+    background-color: $textbox_colour;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+
+aside{
+    margin-top: 3%;
+    width: 100*2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    i{
+        color: $neutral_colour;
+        font-size: 5em;
+        text-shadow: 2px 2px 2px $element_colour;
+        
+        &:hover{
+            color: $hover_colour;
+        }
+        &:active{
+            color: $element_colour;
+        }
+    }
+}
+    

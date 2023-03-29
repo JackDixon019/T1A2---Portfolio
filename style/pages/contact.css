@@ -205,4 +205,36 @@ main {
   margin-bottom: 5vh;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 0.5px 0.7px 2px #000000;
+}
+
+article {
+  width: 60vw;
+  font-size: max(1em, 3vh);
+  border-radius: 16px/16px;
+  border: solid #FFFFFF 3px;
+  padding: 1.5%;
+  background-color: rgba(16, 44, 36, 0.5215686275);
+}
+
+a {
+  text-decoration: none;
+}
+
+aside {
+  margin-top: 3%;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+aside i {
+  color: #FFFFFF;
+  font-size: 5em;
+  text-shadow: 2px 2px 2px #102c24;
+}
+aside i:hover {
+  color: #e2c7f7;
+}
+aside i:active {
+  color: #102c24;
 }/*# sourceMappingURL=contact.css.map */
