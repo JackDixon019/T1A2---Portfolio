@@ -240,6 +240,10 @@ article .picture img {
 #no-picture ol {
   margin-top: 0;
 }
+#no-picture .button-holder {
+  width: 100%;
+  text-align: center;
+}
 #no-picture button {
   background-color: #cee59a;
   border: 1px solid #102c24;
@@ -248,7 +252,6 @@ article .picture img {
   scale: 2;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-  margin-left: 27vw;
   transition: all 0.1s ease-in-out;
 }
 #no-picture button:hover {
@@ -256,8 +259,9 @@ article .picture img {
   border-color: #cee59a;
   font-weight: 600;
 }
-#no-picture button:focus {
-  border-color: #FFFFFF;
+#no-picture button:active {
+  background-color: #102c24;
+  color: #cee59a;
 }
 
 @media screen and (max-width: 900px) {
@@ -278,8 +282,5 @@ article .picture img {
   main #no-picture {
     width: 80vw;
     text-align: center;
-  }
-  main #no-picture button {
-    margin-left: auto;
   }
 }/*# sourceMappingURL=about.css.map */

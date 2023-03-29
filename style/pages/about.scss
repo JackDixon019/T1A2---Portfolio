@@ -30,6 +30,8 @@ article{
     }   
 }
 
+// I wanted to add professional history here too, so the textbox, list, and button required their own section of styling
+
 #no-picture{
     width: auto;
     text-align: left;
@@ -41,6 +43,11 @@ article{
         margin-top: 0;
     }
 
+    .button-holder{
+        width: 100%;
+        text-align: center;
+    }
+
     button{
         background-color: $menu_colour;
         border: 1px solid $element_colour;
@@ -49,7 +56,6 @@ article{
         scale: 2;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
-        margin-left: 27vw;
         transition: all 0.1s ease-in-out;
 
         &:hover{
@@ -58,14 +64,15 @@ article{
             font-weight: 600;
         }
 
-        &:focus{
-            border-color: $neutral_colour;
+        &:active{
+            background-color: $element_colour;
+            color: $menu_colour;
         }
 
     }
 }
 
-
+// Additional styling for tablet-and-smaller sized devices
 
 @media screen and (max-width: $medium) {
     main{
@@ -88,9 +95,6 @@ article{
         #no-picture{
             width: 80vw;
             text-align: center;
-            button{
-                margin-left: auto;
-            }
         }
     }
 }
