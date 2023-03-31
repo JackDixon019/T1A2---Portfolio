@@ -171,6 +171,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Body css allocates the backgroubnd image, a background colour in case the image can't be loaded,  */
+/* assigns text colour, and orders the elements in the page in columns. */
 body {
   position: absolute;
   margin: 0;
@@ -185,6 +187,8 @@ body {
   scrollbar-color: #FFFFFF rgba(16, 44, 36, 0.5215686275);
 }
 
+/* Main css assigns the margins to give space for header/footer, organises content in columns,  */
+/* and gives text a shadow to make it clearer against background */
 main {
   margin: max(12vh, 44px) 0vw max(10vh, 40px) 0vw;
   text-shadow: 0.5px 0.7px 2px #000000;
@@ -193,6 +197,7 @@ main {
   align-items: center;
 }
 
+/* Gives the title a font and size.  */
 .title {
   font-size: max(2rem, 8vh);
   margin-bottom: 5vh;
