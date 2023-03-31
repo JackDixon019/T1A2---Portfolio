@@ -204,7 +204,7 @@ main {
 
 /* Gives the title a font and size.  */
 .title {
-  font-size: max(2rem, 8vh);
+  font-size: max(2rem, 7vh);
   margin-bottom: 5vh;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 0.5px 0.7px 2px #000000;
@@ -274,9 +274,6 @@ article .picture img {
 }
 
 @media screen and (max-width: 900px) {
-  main .title {
-    font-size: 3em;
-  }
   main article {
     flex-direction: column;
     align-items: center;
@@ -289,7 +286,6 @@ article .picture img {
     width: 80vw;
   }
   main #no-picture {
-    width: 80vw;
     text-align: center;
   }
 }/*# sourceMappingURL=about.css.map */
