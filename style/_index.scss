@@ -1,6 +1,11 @@
 @import "./defaults/colour";
 @import "./components/header";
 
+#logo{
+    font-family: 'Luckiest Guy', cursive;
+    color: $menu_colour;
+}
+
 #toggle{
     visibility: hidden;
 }
