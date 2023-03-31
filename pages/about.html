@@ -15,49 +15,32 @@
 </head>
 <body>
 <!-- Header -->
-<header id="header" aria-label="Header">
-    <!-- Logo SVG  -->
-    <a href="../index.html" aria-label="Home">
-        <div id="logo" tabindex="0">
+    <header id="header" aria-label="Header">
+        <!-- Logo  -->
+        <a href="../index.html" aria-label="Home" id="logo">
             JD    
+        </a>
+        <!-- This toggle is hidden. Controls the hamburger menu pop-in -->
+        <input id="toggle" type="checkbox" name="hamburger-menu-toggle">
+        
+        <!-- Creates a clickable hamburger button. The two patties overlay one another, used to become a cross when menu is opened. -->
+        <label for="toggle" class="hamburger" tabindex="0">
+            <div class="top-bun"></div>
+            <div class="patty1">
+                <div class="patty2"></div>
+            </div>
+            <div class="bottom-bun"></div>  
+        </label>
+
+        <!-- In desktop mode, these are header links. In phone mode, this is a hamburger menu pop-in -->
+        <div class="nav-menu" aria-label="Navigation Menu">
+            <nav>
+                <a href="./about.html">About</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
         </div>
-    </a>
-    <!-- This toggle is hidden. Controls the hamburger menu pop-in -->
-    <input id="toggle" type="checkbox" name="hamburger-menu-toggle">
-    
-    <!-- Creates a clickable hamburger button. The two patties overlay one another, used to become a cross when menu is opened. -->
-    <label for="toggle" class="hamburger">
-        <div class="top-bun"></div>
-        <div class="patty1">
-            <div class="patty2"></div>
-        </div>
-        <div class="bottom-bun"></div>
-    </label>
-
-    <!-- In desktop mode, these are header links. In phone mode, this is a hamburger menu pop-in -->
-    <div class="nav-menu" aria-label="Navigation Menu">
-        <nav>
-            <a href="./about.html">
-                <!-- Each link is wrapped around a div in order to enable tab-targeting -->
-                <div tabindex="0">
-                    About
-                </div>
-            </a>
-            <a href="./blog.html">
-                <div tabindex="0">
-                    Blog
-                </div>
-            </a>
-            <a href="./contact.html">
-                <div tabindex="0">
-                    Contact
-                </div>
-            </a>
-        </nav>
-    </div>
-</header>
-
-
+    </header>
 
     <main>
         <h1 class="title">About Me</h1>

@@ -20,7 +20,7 @@
     
     #logo{
         margin-left: 3vw;
-        padding-top: 20%;
+        padding-top: 1vh;
         font-family: 'Luckiest Guy', cursive;
         color: $menu_colour;
         font-size: max(6vh, 30px);
@@ -70,7 +70,7 @@ header{
         background-color: $element_colour;
         height: 8vh;
 
-        // This section dictates the hamburger-menu button
+        // This section styles the hamburger-menu button
         .hamburger{
             border-radius: 10%;
             position: fixed;

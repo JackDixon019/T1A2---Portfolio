@@ -6,6 +6,11 @@
     color: $menu_colour;
 }
 
+/* Hides hamburger toggle on desktops */
+.hamburger{
+    display: none;
+}
+
 #toggle{
     visibility: hidden;
 }
@@ -47,5 +52,12 @@ main{
     margin-bottom: 5vh;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0.5px 0.7px 2px #000000;
+}
+
+/* Shows hamburger menu on tablets/phones */
+@media screen and (max-width: $medium) {
+    .hamburger{
+        display: block;
+    }
 }
 
