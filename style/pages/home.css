@@ -133,7 +133,7 @@ html {
 body {
   position: absolute;
   margin: 0;
-  min-height: 100vh;
+  min-height: 100lvh;
   min-width: 100vw;
   background-color: #131d25;
   color: #FFFFFF;

@@ -1,6 +1,7 @@
 @import "../index";
 @import "../defaults/colour";
 
+// Styles articles
 article{
     width: 60vw;
     font-size: max(1em, 3vh);
@@ -8,14 +9,13 @@ article{
     border: solid $neutral_colour 3px;
     padding: 1.5%;
     background-color: $textbox_colour;
-    
 }
 
 a{
     text-decoration: none;
 }
 
-
+// Styling for links to github/linkedin pages
 aside{
     margin-top: 3%;
     width: 100*2px;
