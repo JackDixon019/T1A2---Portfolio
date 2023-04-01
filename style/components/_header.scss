@@ -1,9 +1,10 @@
 @import "../defaults/colour";
 @import "../defaults/breakpoint";
 @import "../defaults/fonts";
+    
 
-
-@mixin header-footer-style{
+// Styles the header component.
+header{
     font-size: 1.6em;
     padding: 1%;
     top: 0;
@@ -18,11 +19,10 @@
     min-height: 40px;
     z-index: 1;
     
+    // Styling for site logo
     #logo{
         margin-left: 3vw;
         padding-top: 1vh;
-        font-family: 'Luckiest Guy', cursive;
-        color: $menu_colour;
         font-size: max(6vh, 30px);
         
         &:hover{
@@ -30,21 +30,12 @@
         }
     }
     
+    // Positions navigation menu in header
     nav{
         width: 50vw;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-    }
-    
-    a{
-        text-decoration: none;
-        color: $menu_colour;
-        
-        &:hover{
-            color: $hover_colour;
-            transform: scale(1.1);
-        }
     }
     
     .nav-menu{
@@ -55,19 +46,21 @@
         align-items: center;
         font-family: $menu-font;
     }
-    
-}
 
-header{
-    @include header-footer-style();
-    
+    a{
+        text-decoration: none;
+        color: $menu_colour;
+        
+        &:hover{
+            color: $hover_colour;
+            transform: scale(1.1);
+        }
+    }    
 }
 
 // This changes the header to become a hamburger-menu on mobile devices
 @media screen and (max-width: $medium) {
     header{
-        @include header-footer-style();
-        background-color: $element_colour;
         height: 8vh;
 
         // This section styles the hamburger-menu button
@@ -131,7 +124,8 @@ header{
         top: -15%; right: -30%;
         transform: scale(1);        
         }
-    // This section changes the hamburger button into an X shape
+
+    // This section changes the hamburger button into an X shape when active
     #toggle:checked + .hamburger .top-bun{
         opacity: 0;
     }

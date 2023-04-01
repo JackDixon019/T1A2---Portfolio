@@ -1,8 +1,9 @@
 @import "./defaults/colour";
 @import "./components/header";
+@import "./defaults/fonts";
 
 #logo{
-    font-family: 'Luckiest Guy', cursive;
+    font-family: $logo-font;
     color: $menu_colour;
 }
 
@@ -19,7 +20,7 @@ html{
     scroll-behavior: smooth;
 }
 
-/* Body css allocates the backgroubnd image, a background colour in case the image can't be loaded,  */
+/* Body css allocates the background image, a background colour in case the image can't be loaded,  */
 /* assigns text colour, and orders the elements in the page in columns. */
 
 body{
@@ -46,7 +47,7 @@ main{
     align-items: center;
 }
 
- /* Gives the title a font and size.  */
+ /* Gives the title a font, shadow, and size.  */
  .title {
     font-size: max(2rem, 7vh);
     margin-bottom: 5vh;

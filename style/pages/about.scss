@@ -48,6 +48,7 @@ article{
         text-align: center;
     }
 
+    // Styles the resume button to match the colour scheme of the website + hover and click effects
     button{
         background-color: $menu_colour;
         border: 1px solid $element_colour;
@@ -85,6 +86,7 @@ article{
         .picture{
             margin-bottom: 5vh;
         }
+        
         .text{
             width: 80vw;
         }
