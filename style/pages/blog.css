@@ -227,7 +227,7 @@ article .date {
   font-weight: 100;
 }
 article img {
-  max-width: min(100%, 300px);
+  max-width: min(100%, 200px);
 }
 article p {
   margin-top: 3%;
