@@ -1,5 +1,5 @@
 header {
-  font-size: 1.6em;
+  font-size: max(3vh, 2rem);
   padding: 1%;
   top: 0;
   text-align: left;
@@ -34,7 +34,6 @@ header .nav-menu {
   justify-content: space-around;
   align-items: center;
   font-family: "Francois One", sans-serif;
-  font-size: max(3vh, 2rem);
 }
 header a {
   text-decoration: none;
