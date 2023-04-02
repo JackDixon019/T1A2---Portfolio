@@ -34,6 +34,7 @@ header .nav-menu {
   justify-content: space-around;
   align-items: center;
   font-family: "Francois One", sans-serif;
+  font-size: max(3vh, 2rem);
 }
 header a {
   text-decoration: none;
