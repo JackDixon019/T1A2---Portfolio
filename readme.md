@@ -3,9 +3,9 @@
 ## Links
 [Github repo is available here](https://github.com/JackDixon019/T1A2---Portfolio)
 
-[Website is available here](https://jackdixonportfolio.netlify.app/pages/about.html)
+[Website is available here](https://jackdixonportfolio.netlify.app/)
 
-[Presentation is available here]()
+[Presentation is available here](https://youtu.be/uu42ZMmf0Aw)
 
 ## About
 This website was developed as a portfolio to showcase myself and my skills to potential employers in the web development industry.
